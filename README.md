@@ -1,6 +1,6 @@
 
 <h1 align="center"><strong>Daniel Fernandes</strong></h1>
-<p align="center">Software Engineer Student at Codam (42 Network)</p>
+<p align="center">Software Engineer Student @ Codam (42 Network)</p>
 
 
 <p align="center">
@@ -8,39 +8,49 @@
   <a href="https://www.instagram.com/danielfernandesdesigns">Instagram</a>
 </p>
 
+<p align="center">
+  Background in design, now building software and robotics.<br>
+  I work mainly in <strong>C and Python</strong>.
+</p>
 
-Background in design, now building software at **Codam**.
-I work mainly in **C and Python**.
-
----
-
-### Tools & Technologies  
-
-**Design Tools:**  
-
-![My Skills](https://skillicons.dev/icons?i=figma,blender,ai,ps,xd,ae)
-
-**Programming Languages:**
-
-![My Skills](https://skillicons.dev/icons?i=html,c,css,py)
+<p align="center">
+  <a href="https://github.com/oakoudad/badge42">
+    <img src="https://badge.mediaplus.ma/darkblue/danmorei" alt="danmorei's 42 stats">
+  </a>
+</p>
 
 ---
 
-```c
-typedef struct s_about_me
-{
-    char    *user;
-    char    *role;
-    char    *hobbies[4];
-    char    *city;
-}   t_about_me;
+<h3 align="center">Tools & Technologies</h3>
 
-t_about_me  daniel = {
-    .user    = "Daniel Fernandes",
-    .role    = "Designer & Coder",
-    .hobbies = {"Muay Thai", "Drawing", "Reading", "Video Games"},
-    .city    = "Amsterdam, The Netherlands"
-};
+<p align="center"><strong>Design Tools:</strong></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=figma,blender,ai,ps,xd,ae" alt="Design tools">
+</p>
+
+<p align="center"><strong>Programming Languages:</strong></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,c,css,py,rust" alt="Programming languages">
+</p>
+
+---
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class AboutMe:
+    user: str
+    role: str
+    hobbies: list[str]
+    city: str
+
+daniel = AboutMe(
+    user="Daniel Fernandes",
+    role="Designer & Coder",
+    hobbies=["Muay Thai", "Drawing", "Reading", "Video Games"],
+    city="Amsterdam, The Netherlands",
+)
 ```
 
 ---
